@@ -23,6 +23,12 @@ This Bash script automates the process of creating, activating, and configuring 
 
 1. **Download the Script**: Save the script as `create_swap.sh`.
 
+**Navigate to the Directory**:
+After cloning the repository, change your current directory to the one containing the script:
+```bash
+cd arch-linux-swap-file
+```
+
 2. **Make the Script Executable**:
    ```bash
    chmod +x swapfile.sh
