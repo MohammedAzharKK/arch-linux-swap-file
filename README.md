@@ -45,6 +45,27 @@ After the script completes, you can verify that the swap file is active and chec
 swapon --show
 free -h
 ```
+**If you need to increase the swap file size after running the script**:
+
+Deactivate the Existing Swap File:
+
+```bash
+sudo swapoff /swapfile
+```
+Remove the Old Swap File Entry from /etc/fstab (optional, if you plan to re-run the script to create a new one):
+
+```bash
+sudo sed -i '/\/swapfile/d' /etc/fstab
+```
+**Re-run the Script**: 
+Run
+```bash
+swapfile.sh
+``` 
+again and enter the new, larger swap size when prompted.
+
+
+
 Customization
 You can modify the default values of SWAP_FILE, SYSCTL_CONF, and SWAPPINESS within the script as needed.
 Adjust the swappiness value in the /etc/sysctl.d/99-sysctl.conf file if you want to change how aggressively the system uses swap space.
