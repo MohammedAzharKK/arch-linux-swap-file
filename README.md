@@ -25,12 +25,12 @@ This Bash script automates the process of creating, activating, and configuring 
 
 2. **Make the Script Executable**:
    ```bash
-   chmod +x create_swap.sh
+   chmod +x swapfile.sh
    ```
 **Run the Script with Root Privileges**:
 
 ```bash
-sudo ./create_swap.sh
+sudo ./swapfile.sh
 ```
 Follow the Prompts: Enter the desired swap file size (e.g., 1G, 2G, 512M) when prompted.
 
