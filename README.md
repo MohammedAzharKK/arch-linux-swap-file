@@ -21,7 +21,12 @@ This Bash script automates the process of creating, activating, and configuring 
 
 ## Usage
 
-1. **Download the Script**: Save the script as `create_swap.sh`.
+1. **Download the Script**:
+ **Clone the Repository**:  
+   Open your terminal and type the following command to create a local copy of the repository on your machine:
+   ```bash
+   git clone https://github.com/MohammedAzharKK/arch-linux-swap-file.git
+   ```
 
 **Navigate to the Directory**:
 After cloning the repository, change your current directory to the one containing the script:
